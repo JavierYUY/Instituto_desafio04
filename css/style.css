@@ -562,6 +562,10 @@ main p{
 }
 
 /***********************Estilos de Contacto***********************/
+.mainContacto{
+    height: 30rem;
+}
+
 form{
     background-color: #669966;
     color: white;
