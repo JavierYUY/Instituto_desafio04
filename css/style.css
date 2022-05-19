@@ -424,7 +424,8 @@ main p{
 /***********************Estilos de Galeria***********************/
 .divFotos{
     display: grid;
-    grid-template-areas:    "tituloFotos"
+    grid-template-areas:    "logoChico"
+                            "tituloFotos"
                             "foto1"
                             "foto2"
                             "foto3"
@@ -432,6 +433,31 @@ main p{
     justify-content: center;
     justify-items: center;
     gap: 1rem;
+}
+
+.divLogoChico{
+    grid-area: logoChico;
+}
+
+.divLogoChico img{
+    width: 20rem;
+}
+
+.rotar{
+    animation-name: rotar-logo;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotar-logo{
+    from{
+        transform: rotateY(0);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
 }
 
 .divFotos h2{
@@ -665,7 +691,8 @@ form legend{
 
     /*GALERIA*/
     .divFotos{
-        grid-template-areas:    "tituloFotos tituloFotos"
+        grid-template-areas:    "logoChico logoChico"
+                                "tituloFotos tituloFotos"
                                 "foto1 foto2"
                                 "foto3 foto4";
     }
@@ -735,7 +762,8 @@ form legend{
 
     /*GALERIA*/
     .divFotos{
-        grid-template-areas:    "tituloFotos tituloFotos tituloFotos tituloFotos"
+        grid-template-areas:    "logoChico logoChico logoChico logoChico"
+                                "tituloFotos tituloFotos tituloFotos tituloFotos"
                                 "foto1 foto2 foto3 foto4";
     }
 
